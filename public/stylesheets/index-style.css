@@ -7,6 +7,9 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.grid {
   display: grid;
   grid-template-columns: 20% auto 20%;
   grid-template-areas:
