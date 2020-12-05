@@ -1,0 +1,56 @@
+main {
+    display: flex;
+}
+
+.boxunit {
+    background-color: rgb(28, 184, 196);
+    color: red;
+    padding: 5px;
+    margin: 2px;
+    width: 170px;
+    display: flex;
+}
+
+.square{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.boxunit h2{
+    margin: 0px 0px 7px 0px;
+    padding: 4px 10px 0px 0px;
+}
+
+.boxunit h3{
+    font-size: 15px;
+    color: black;
+    margin-top: 0;
+}
+
+.unitfail{
+    background-color: red;
+    color:black;
+    padding: 5px;
+    margin: 2px;
+    width: 170px;
+    display: flex;
+}
+
+.unitfail h2{
+    margin: 0px 0px 7px 0px;
+    padding: 4px 10px 0px 0px;
+}
+
+.unitfail h3{
+    font-size: 15px;
+    color: black;
+    margin-top: 0;
+}
