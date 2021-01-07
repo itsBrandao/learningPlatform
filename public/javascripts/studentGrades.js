@@ -1,12 +1,24 @@
-    var nome = "John Smith";
+    var nome = sessionStorage.getItem("studentName");
+    var id = sessionStorage.getItem("studentID");
     nome += " grades";
     
     var units = [
-        { unit: "Mathematics", grade: 8.3, semester: 3, ects: 6 },
-        { unit: "Literature", grade: 11.2, semester: 2, ects: 6 },
-        { unit: "Laws", grade: 18.5, semester: 1, ects: 3 },
-        { unit: "Informatics", grade: 14.3, semester: 1, ects: 6 },
-        { unit: "Cooking", grade: 7.4, semester: 2, ects: 3 }
+        [
+            { unit: "Mathematics", grade: 8.3, semester: 3, ects: 6 },
+            { unit: "Literature", grade: 11.2, semester: 2, ects: 6 },
+            { unit: "Laws", grade: 18.5, semester: 1, ects: 3 },
+            { unit: "Informatics", grade: 14.3, semester: 1, ects: 6 },
+            { unit: "Cooking", grade: 7.4, semester: 2, ects: 3 }
+        ],
+        [
+            { unit: "Mathematics", grade: 8.3, semester: 3, ects: 6 },
+            { unit: "Literature", grade: 11.2, semester: 2, ects: 6 },
+            { unit: "Laws", grade: 18.5, semester: 1, ects: 3 }
+        ],
+        [
+            { unit: "Mathematics", grade: 8.3, semester: 3, ects: 6 },
+            { unit: "Literature", grade: 11.2, semester: 2, ects: 6 }
+        ]
     ];
 
     var sum = 0;
@@ -19,7 +31,7 @@
         document.getElementById("student").innerHTML = nome;
 
         let html = "";
-        for(let unit of units){
+        for(let unit of units[id]){
             html += createUnitHtml(unit);
         }
 

@@ -1,0 +1,25 @@
+.box-name {
+    text-align: left;
+    background-color: lightblue;
+    color: purple;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.box-name h1 {
+    font-size: 20px;
+}
+
+.box-name h3 {
+    font-size: 15px;
+}
+
+#students {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap; /* Passa para baixo automaticamente as boxes */
+}
