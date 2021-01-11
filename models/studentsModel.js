@@ -19,18 +19,19 @@ var students = [
     ] }
 ];
 
-module.exports.getAllStudents =
-    function() { return students; }
+module.exports.getAllStudents = function() { 
+    return students; 
+}
 
-module.exports.getStudent =
-    function(pos) { return students[pos]; };
+module.exports.getStudent = function(pos) { 
+    return students[pos]; 
+}
 
 module.exports.saveGrade = function(pos, unit) {
     let student = students[pos];
     let units = student.units;
     
     if (containsUnit(unit, units, student)) {
-        //Se existir
         return {msg:"Changed grade of unit " + unit.unit};
     } else {
         units.push({ unit: unit.unit, grade: unit.grade });
